@@ -1,0 +1,31 @@
+spring:
+  profiles:
+    active:
+    - dev
+---
+server:
+  port: 8001                    
+
+spring:
+  profiles: dev
+  application:
+    name: systemcore-provider
+    
+eureka:
+  client:
+    service-url: 
+     defaultZone: http://localhost:7001/eureka
+
+---
+server:
+  port: 8001                    
+
+spring:
+  profiles: test
+  application:
+    name: systemcore-provider
+    
+eureka:
+  client:
+    service-url: 
+     defaultZone: localhost:7001/eureka
