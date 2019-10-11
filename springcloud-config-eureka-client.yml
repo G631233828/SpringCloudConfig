@@ -14,14 +14,16 @@ spring:
    
     
     
+    
 eureka:
  instance:
-    hostname: eureka7001.com 
+    hostname: localhost 
  client:
     register-with-eureka: false  #当前的eureka-server 自己不注册进服务列表中
     service-url: 
-      defaultZone: http://eureka7001.com:7001/eureka/
+      defaultZone: http://localhost:7001/eureka/
     fetch-registry: false   #不通过eureka获取注册信息
+    
     
 ---
 server:
@@ -34,14 +36,14 @@ spring:
     
     
     
-    
 eureka:
  instance:
-    hostname: eureka7001.com 
+    hostname: localhost 
  client:
     register-with-eureka: false  #当前的eureka-server 自己不注册进服务列表中
     service-url: 
-      defaultZone: http://eureka7001.com:7001/eureka/
+      defaultZone: http://localhost:7001/eureka/
     fetch-registry: false   #不通过eureka获取注册信息
+    
     
        
